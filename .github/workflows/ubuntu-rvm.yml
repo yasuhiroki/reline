@@ -33,5 +33,8 @@ jobs:
         sh ./download-test_readline.sh
     - name: Run test
       run: |
+        echo source
         source $HOME/.rvm/scripts/rvm
+        
+        echo rake
         rake ci-test
